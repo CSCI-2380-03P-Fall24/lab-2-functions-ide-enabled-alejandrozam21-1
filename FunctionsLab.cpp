@@ -2,7 +2,6 @@
 #include <string>
 using namespace std; // making life easier so that we do not need to use std::cin , std::cout, etc.
 
-
 //Write the function called locateSmallest in the given interval such that 
 // output : int: index of the smallest value in the array
 // input : an array of int, the starting index of search, the ending point of searchspace
@@ -10,8 +9,16 @@ using namespace std; // making life easier so that we do not need to use std::ci
 // Note that I don't want the smallest value
 
 
-int locateSmallest(int array[], int start, int end){
-	return -1; // fix this!
+int locateSmallest(int array[], int start, int end)
+{
+	for(int i = start, i < end, i++)
+	{
+		for(int j = start, j < end, j++)
+		{
+			if(arr1[i] > arr1[j])
+		}
+	}
+	return arr[j];
 }
 
 //Write the function called replaceVariable in the given interval such that 
@@ -20,8 +27,16 @@ int locateSmallest(int array[], int start, int end){
 //     an int which is the starting index of search,
 //     an int which is the ending point of searchspace
 // function: Search in the array from given start to end index and replace the given target value with 1000
-void replaceVariable() {
-	return;
+void replaceVariable(int arr1[], int start, int end) 
+{
+	for(int i = start, i < end, i++)
+	{
+		for(int j = start, j < end, j++)
+		{
+			if(arr1[i] < arr1[j])
+		}
+	}
+		arr1[j] = 1000;
 }
 
 
@@ -29,8 +44,14 @@ void replaceVariable() {
 //write a function called printArray to print out the elements of the given array
 //output: nothing
 //input: the array of integers and its size
-void printArray() {
-	return;
+int printArray(arr1[], int size) 
+{
+	for(int i = 0, i < size - 1, i++)
+	{
+		cout << arr1[i] << ", ";
+	}
+
+	cout << arr1[size] << endl;
 }
 
 
@@ -48,6 +69,15 @@ void printArray() {
 //     n%m gives you the remainder after dividing n to m. for example 7%3 = 1 because 7 = 3*2 + 1, then 1 is the remainder.
 
 
-int sumOdds(int array[], int start, int end){
-	return -1;
+int sumOdds(int array[], int start, int end)
+{
+	int sum = 0;
+	for(int i = start, i > end, i++)
+	{
+		if(i % 2)
+		{
+			sum = sum + i;
+		}
+	}
+		return sum;
 }
